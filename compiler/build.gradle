@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':annotations')
+    compile 'com.google.auto.service:auto-service:1.0-rc3'
+    compile 'com.squareup:javapoet:1.9.0'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
