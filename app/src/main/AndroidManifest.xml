@@ -18,6 +18,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ui.activity.ChoosePhotoActivity" />
+
+        <activity android:name=".TestActivity" />
+
     </application>
 
 </manifest>
