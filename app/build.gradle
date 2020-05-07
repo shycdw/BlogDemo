@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt' // add
+//apply plugin: 'com.neenbedankt.android-apt' // add
 
 
 android {
@@ -30,6 +30,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':annotations')
     compile project(':api')
-    apt project(':compiler')
+//    apt project(':compiler')
     compile 'com.android.support:recyclerview-v7:25.3.1'
 }
