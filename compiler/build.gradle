@@ -1,10 +1,10 @@
 apply plugin: 'java'
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':annotations')
-    compile 'com.google.auto.service:auto-service:1.0-rc3'
-    compile 'com.squareup:javapoet:1.9.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':annotations')
+    implementation 'com.google.auto.service:auto-service:1.0-rc3'
+    implementation 'com.squareup:javapoet:1.9.0'
 }
 
 tasks.withType(JavaCompile) {
